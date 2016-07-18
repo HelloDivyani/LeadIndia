@@ -1,0 +1,120 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+<title>Be Our Part.</title>
+<style>
+h1,h3{
+background-color:#FCE4EC;
+ text-transform:capitalize;
+font-family:sans-serif;
+color:#880E4F;
+
+ text-align:center;
+
+ letter-spacing:2pt;
+ word-spacing:25px;
+ }
+ h3{
+ font-size:xx-large;
+ }
+table{ 
+margin-left:550px;
+border:2px solid white;
+ background-color:#FFF176;
+ }
+#leadIndia{
+margin-left:600px;
+align:center;
+}
+ td{
+ padding:10px; border:2px solid white;
+ }
+ #SubmitImage
+ {
+ margin-left:750px;
+ }
+ body{
+ repeat:no-repeat;
+ background:url('formb.jpg');
+ background-color:#FCE4EC;
+ }
+
+
+</style>
+<script type="text/javascript">
+
+function show()
+{
+var fname = document.getElementById("txtbox1").value;
+ var lname = document.getElementById("txtbox2").value;
+ var age = document.getElementById("age").value; 
+ var citizen = document.getElementById("country").value;
+ var email=document.getElementById("myEmail").value; 
+  
+
+ res=confirm("You have entered:" + "\n Name : " + fname + " " + lname + "\n Age : " + age + "\n Citizenship : "+ citizen +"\nEmalId :"+email+ "\n\n Do you want to confirm these details ?"); 
+ if(res==true)
+ {
+ 
+ alert("ThankYou! Welcome to be part of development");
+ }
+ else
+ {
+ alert("Please fill your details.");
+ }
+}
+
+
+</script>
+
+</head>
+<body >
+<script type="text/javascript">
+$(document).ready(function(){
+ $("h1").click(function(){
+ $(this).hide();
+  });
+ </script>
+<div >
+
+<h1>Be A Part of Our Family.</h1>
+<h3>Contribute Developing India through your skills.</h3>
+<img id="leadIndia" src="lead20.png" alt="Lead India 2020"></img>
+<h3>Please fill the form below and register yourself to be a part of developing India Movement 2020.</h3><br>
+
+<form method="post" name="register">
+<TABLE border=1>
+ <TR> <TD><span style="color:red">*</span> First name: </TD>
+ <TD> <INPUT type="text" name="name1" ID="txtbox1" autofocus autocomplete="on" placeholder="Enter your first name" required/> </TD> </tr>
+ <tr><td><span style="color:red">*</span> Last Name:</td>
+ <td><input type="text" name="name2" id="txtbox2" autocomplete="on" placeholder="Enter your last name" required></input></td></tr>
+ <tr>
+ <td><span style="color:red">*</span> Age: </td>
+ <td><input type="number" name="age" id="age" min="1" max="100" required></input></td></tr>
+ <TD><LABEL for="country"><span style="color:red">*</span>Citizenship:</LABEL></TD> 
+ <td><INPUT list="citizen" name="cit" ID="country" placeholder="Enter your country citizenship" required> 
+ <DATALIST ID="citizen">
+ <OPTION value="India"> 
+ <OPTION value="Sri Lanka"> 
+ <OPTION value="Australia">
+ <OPTION value="Africa">  
+ <OPTION value="America"> 
+ <OPTION value="Japan"> 
+ </DATALIST>  </td></tr>
+ <tr><td><span style="color:red">*</span>Email-Id:</td>
+ <td><INPUT type="email" id="myEmail"  name="email" autocomplete="on" placeholder="Enter your email-id" required></td></tr>
+ <tr><td>Contact Number:</td>
+ <td><INPUT type="tel" name="contact" placeholder="Enter your phone number"></TD></td></tr>
+ <tr><td><span style="color:red">*</span>Gender:</td>
+  <td><INPUT type="radio" name="Gender"> Male
+  <INPUT type="radio" name="Gender"> Female</td>
+ </tr>
+ <TR> <TD><LABEL for="Reason">How would you like to contribute to India?</LABEL>
+ </TD> <TD><TEXTAREA rows="5" cols="22" ID="Reason" ></TEXTAREA></TD> </TR>
+ </table>
+ <br><INPUT type="image" src="Submit.png" alt="submit" width="100" height="65" onclick="show()" id="SubmitImage" />
+</form>
+<h1 id="thank"> ThankYou!!!</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-1.11.3.js"></script>
+<title>Festivals Of India</title>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(document).load(function(){
+    $("li").hide();
+	});
+	
+	$("#major").click(function(){
+    $("li").show();
+  });
+
+  });
+</script>
+<style>
+#major{
+background-color:blue;}
+div{
+margin-left:5px;
+}
+h1{
+ text-transform:capitalize;
+font-family:sans-serif;
+color:#880E4F;
+
+ text-align:center;
+
+ letter-spacing:2pt;
+ word-spacing:25px;
+ }
+ body{
+ background:url('fest123.jpg');
+ }
+ ul{
+list-style-position:inside;
+font-size:xx-large;
+letter-spacing:2pt;
+word-spacing:30px;
+font-family:sans-serif;
+color:#4527A0;
+}
+p
+{
+	text-indent=50px;
+	font-size:x-large;
+	font-family:sans-serif;
+	color:#6200EA;
+	word-spacing:15px;
+	letter-spacing:2pt;
+	
+	}
+</style>
+<script type="text/javascript" src="jquery-1.8.3.js" ></script>
+<script type="text/javascript"  src= "galleria/galleria-1.2.8.js"></script>
+</head>
+<body>
+<h1> Festivals </h1>
+<div id="gallery">
+
+	
+	
+	<img src="nfest1.jpg" >
+	<img src="fest1.jpg" >
+	<img src="fest3.jpg">
+	<img src="nfest2.jpg" >
+	<img src="nfest5.jpg" >
+	<img src="nfest6.jpg" >
+		<img src="nfest7.jpg" >
+			<img src="nfest8.jpg" >
+				<img src="nfest10.jpg" >
+				
+		<img src="nfest11.jpg" >	
+	<img src="nfest12.jpg" >
+	<img src="nfest45.jpg" >
+	<img src="nfest67.jpg" >	
+	<img src="c1.jpeg" >	
+		<img src="nfest4.jpg" >
+            
+        </div>
+		
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+			 $("#gallery").galleria({
+                width: 1200,
+                height: 500
+                });
+        </script>
+		<h1  id="major" style="color:#E1F5FE">The Major Festivals of India:</h1>
+<ul id="fest">
+
+<li>Diwali</li>
+<li>Dusshera</li>
+<li>Holi</li>
+<li>Ganesh Chaturthi</li>
+<li>Durga Pooja</li>
+<li>Navratri</li>
+<li>Raksha Bandhan</li>
+<li>Janmashtami</li>
+<li>Eid ul Fitr</li>
+<li>Pongal</li>
+<li>Christmas</li>
+
+</ul>
+<p>All Festivals are celebrated with joy, happiness and with the feeling of Oneness.</p>
+
+</body>
+</html>
